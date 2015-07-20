@@ -26,7 +26,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libHevcSwDecoder \
     libmm-abl \
-    #libqct_resampler \ not exists on iuni u3
+    #libqct_resampler \ # not exists on iuni u3 \
     libtime_genoff \
     libTimeService \
     TimeService
@@ -35,9 +35,9 @@ PRODUCT_PACKAGES += \
     libscale \
 
 PRODUCT_PACKAGES += \
-#    libwvdrmengine \ not exists on iuni u3
+	#libwvdrmengine \ # not exists on iuni u3 \
     libwvdrm_L3 \
     libwvm \
-    #libWVStreamControlAPI_L3 not exists on iuni u3
+    #libWVStreamControlAPI_L3 \ #not exists on iuni u3 \
 
 $(call inherit-product, vendor/iuni/msm8974-common/msm8974-common-vendor-blobs.mk)
