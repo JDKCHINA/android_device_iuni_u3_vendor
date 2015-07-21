@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,6 +19,7 @@ DEVICE_PACKAGE_OVERLAYS += vendor/iuni/msm8974-common/overlay
 
 PRODUCT_PACKAGES += \
     com.qualcomm.location \
+    PPPreference \
     QuickBoot \
     qcrilmsgtunnel \
     shutdownlistener
@@ -26,7 +27,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libHevcSwDecoder \
     libmm-abl \
-    #libqct_resampler \ # not exists on iuni u3 \
     libtime_genoff \
     libTimeService \
     TimeService
@@ -35,9 +35,9 @@ PRODUCT_PACKAGES += \
     libscale \
 
 PRODUCT_PACKAGES += \
-	#libwvdrmengine \ # not exists on iuni u3 \
+    libwvdrmengine \
     libwvdrm_L3 \
     libwvm \
-    #libWVStreamControlAPI_L3 \ #not exists on iuni u3 \
+    libWVStreamControlAPI_L3
 
 $(call inherit-product, vendor/iuni/msm8974-common/msm8974-common-vendor-blobs.mk)

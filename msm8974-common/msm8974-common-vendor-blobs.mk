@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,9 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/iuni/msm8974-common/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/iuni/msm8974-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
-    vendor/iuni/msm8974-common/proprietary/vendor/lib/liboi_sbc_decoder.so:system/vendor/lib/liboi_sbc_decoder.so \
     vendor/iuni/msm8974-common/proprietary/bin/mpdecision:system/bin/mpdecision \
-    vendor/iuni/msm8974-common/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/iuni/msm8974-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
@@ -54,19 +52,30 @@ PRODUCT_COPY_FILES += \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
-    vendor/iuni/msm8974-common/proprietary/bin/gsiff_daemon:system/bin/gsiff_daemon \
+    vendor/iuni/msm8974-common/proprietary/app/com.qualcomm.location.apk:system/app/com.qualcomm.location.apk \
+    vendor/iuni/msm8974-common/proprietary/bin/location-mq:system/bin/location-mq \
+    vendor/iuni/msm8974-common/proprietary/bin/lowi-server:system/bin/lowi-server \
     vendor/iuni/msm8974-common/proprietary/bin/quipc_igsn:system/bin/quipc_igsn \
     vendor/iuni/msm8974-common/proprietary/bin/quipc_main:system/bin/quipc_main \
+    vendor/iuni/msm8974-common/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
+    vendor/iuni/msm8974-common/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/iuni/msm8974-common/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/iuni/msm8974-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/iuni/msm8974-common/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
+    vendor/iuni/msm8974-common/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/iuni/msm8974-common/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
+    vendor/iuni/msm8974-common/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+    vendor/iuni/msm8974-common/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libquipc_ulp_adapter.so:system/vendor/lib/libquipc_ulp_adapter.so \
+    vendor/iuni/msm8974-common/proprietary/vendor/lib/libwifiscanner.so:system/vendor/lib/libwifiscanner.so \
+    vendor/iuni/msm8974-common/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
+    vendor/iuni/msm8974-common/proprietary/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -76,12 +85,10 @@ PRODUCT_COPY_FILES += \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-    vendor/iuni/msm8974-common/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
-    vendor/iuni/msm8974-common/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
@@ -107,7 +114,6 @@ PRODUCT_COPY_FILES += \
     vendor/iuni/msm8974-common/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
-    vendor/iuni/msm8974-common/proprietary/vendor/lib/libdsnetutils.so:system/vendor/lib/libdsnetutils.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
@@ -131,9 +137,11 @@ PRODUCT_COPY_FILES += \
     vendor/iuni/msm8974-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/iuni/msm8974-common/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
     vendor/iuni/msm8974-common/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
+    vendor/iuni/msm8974-common/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/iuni/msm8974-common/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/iuni/msm8974-common/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/hw/sensors.msm8974.so:system/vendor/lib/hw/sensors.msm8974.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
@@ -145,5 +153,4 @@ PRODUCT_COPY_FILES += \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/liblistenhardware.so:system/vendor/lib/liblistenhardware.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/liblistenjni.so:system/vendor/lib/liblistenjni.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/liblistensoundmodel.so:system/vendor/lib/liblistensoundmodel.so \
-    vendor/iuni/msm8974-common/proprietary/bin/hvdcp:system/bin/hvdcp
 endif
