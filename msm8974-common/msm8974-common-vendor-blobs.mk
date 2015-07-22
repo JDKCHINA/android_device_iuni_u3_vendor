@@ -152,5 +152,5 @@ PRODUCT_COPY_FILES += \
     vendor/iuni/msm8974-common/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/liblistenhardware.so:system/vendor/lib/liblistenhardware.so \
     vendor/iuni/msm8974-common/proprietary/vendor/lib/liblistenjni.so:system/vendor/lib/liblistenjni.so \
-    vendor/iuni/msm8974-common/proprietary/vendor/lib/liblistensoundmodel.so:system/vendor/lib/liblistensoundmodel.so \
+    vendor/iuni/msm8974-common/proprietary/vendor/lib/liblistensoundmodel.so:system/vendor/lib/liblistensoundmodel.so
 endif
